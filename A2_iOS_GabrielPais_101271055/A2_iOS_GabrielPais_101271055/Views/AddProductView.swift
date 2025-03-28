@@ -12,6 +12,7 @@ struct AddProductView: View {
     @State private var provider: String = ""
     @State private var selectedImage: UIImage?
     @State private var isShowingImagePicker = false
+    @State private var useDefaultImage = true // Default to true
     
     var body: some View {
         Form {
@@ -24,23 +25,40 @@ struct AddProductView: View {
             }
             
             Section(header: Text("Product Image")) {
-                Button(action: {
-                    isShowingImagePicker = true
-                }) {
+                Toggle("Use Default Image", isOn: $useDefaultImage)
+                
+                if !useDefaultImage {
+                    Button(action: {
+                        isShowingImagePicker = true
+                    }) {
+                        HStack {
+                            Text("Select Custom Image")
+                            Spacer()
+                            if let selectedImage = selectedImage {
+                                Image(uiImage: selectedImage)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 100)
+                                    .cornerRadius(8)
+                            } else {
+                                Image(systemName: "photo")
+                                    .font(.system(size: 40))
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                    }
+                } else {
                     HStack {
-                        Text("Select Image")
+                        Text("Using Default Image")
                         Spacer()
-                        if let selectedImage = selectedImage {
-                            Image(uiImage: selectedImage)
+                        // Show a random default image preview
+                        if let defaultImage = DefaultImageHelper.shared.getDefaultImage() {
+                            Image(uiImage: defaultImage)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 100)
                                 .cornerRadius(8)
-                        } else {
-                            Image(systemName: "photo")
-                                .font(.system(size: 40))
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(.gray)
                         }
                     }
                 }
@@ -67,14 +85,24 @@ struct AddProductView: View {
         newProduct.productDescription = description
         newProduct.price = Double(price) ?? 0.0
         newProduct.provider = provider
-        newProduct.hasImage = selectedImage != nil
+        
+        // Set hasImage to true always - either custom or default
+        newProduct.hasImage = true
         
         do {
             try viewContext.save()
             
-            // Save the image if one is selected
-            if let image = selectedImage, let id = newProduct.productID {
-                saveImage(image, forProductID: id)
+            if let id = newProduct.productID {
+                if useDefaultImage {
+                    // Use default image
+                    DefaultImageHelper.shared.saveDefaultImageForProduct(productID: id)
+                } else if let image = selectedImage {
+                    // Use selected custom image
+                    DefaultImageHelper.shared.saveImage(image, forProductID: id)
+                } else {
+                    // No image selected but not using default - still use a default
+                    DefaultImageHelper.shared.saveDefaultImageForProduct(productID: id)
+                }
             }
             
             // Reset form fields
@@ -83,31 +111,12 @@ struct AddProductView: View {
             price = ""
             provider = ""
             selectedImage = nil
+            useDefaultImage = true
             
             // Dismiss the view
             presentationMode.wrappedValue.dismiss()
         } catch {
             print("Error saving product: \(error)")
-        }
-    }
-    
-    func saveImage(_ image: UIImage, forProductID id: UUID) {
-        guard let data = image.jpegData(compressionQuality: 0.8) else { return }
-        
-        let fileManager = FileManager.default
-        if let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
-            let productImagesURL = documentsURL.appendingPathComponent("ProductImages").appendingPathComponent(id.uuidString)
-            
-            do {
-                // Create directories if they don't exist
-                try fileManager.createDirectory(at: productImagesURL, withIntermediateDirectories: true)
-                
-                // Save the image
-                let fileURL = productImagesURL.appendingPathComponent("image_1.jpg")
-                try data.write(to: fileURL)
-            } catch {
-                print("Error saving image: \(error)")
-            }
         }
     }
 }

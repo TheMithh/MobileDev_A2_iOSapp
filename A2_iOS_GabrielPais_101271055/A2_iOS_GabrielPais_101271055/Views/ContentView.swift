@@ -104,9 +104,19 @@ struct ContentView: View {
             newProduct.productDescription = "This is the description for product \(i)."
             newProduct.price = Double(i) * 10.0
             newProduct.provider = "Provider \(i)"
+            newProduct.hasImage = true  // Set to true as we'll assign default images
         }
+        
         do {
             try viewContext.save()
+            
+            // Now assign default images to each sample product
+            for (index, product) in products.enumerated() {
+                if let id = product.productID {
+                    // Use the index to assign different default images to each product
+                    DefaultImageHelper.shared.saveDefaultImageForProduct(productID: id, index: index)
+                }
+            }
         } catch {
             print("Error saving sample products: \(error)")
         }
