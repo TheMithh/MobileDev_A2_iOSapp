@@ -7,65 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B7FDE172D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE162D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055App.swift */; };
-		7B7FDE192D95DCA000AD7823 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE182D95DCA000AD7823 /* ContentView.swift */; };
-		7B7FDE1B2D95DCC800AD7823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FDE1A2D95DCC800AD7823 /* Assets.xcassets */; };
-		7B7FDE1E2D95DCC800AD7823 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FDE1D2D95DCC800AD7823 /* Preview Assets.xcassets */; };
-		7B7FDE202D95DCC800AD7823 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE1F2D95DCC800AD7823 /* Persistence.swift */; };
-		7B7FDE232D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE212D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */; };
-		7B7FDE2D2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE2C2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.swift */; };
-		7B7FDE372D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE362D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.swift */; };
-		7B7FDE392D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FDE382D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITestsLaunchTests.swift */; };
+		7B9A06AD2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06AC2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055App.swift */; };
+		7B9A06AF2D96F6C30053AC68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06AE2D96F6C30053AC68 /* ContentView.swift */; };
+		7B9A06B12D96F6CB0053AC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9A06B02D96F6CB0053AC68 /* Assets.xcassets */; };
+		7B9A06B42D96F6CB0053AC68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9A06B32D96F6CB0053AC68 /* Preview Assets.xcassets */; };
+		7B9A06B62D96F6CB0053AC68 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06B52D96F6CB0053AC68 /* Persistence.swift */; };
+		7B9A06B92D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06B72D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7B7FDE292D95DCC900AD7823 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B7FDE0B2D95DC9F00AD7823 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B7FDE122D95DCA000AD7823;
-			remoteInfo = A2_iOS_GabrielPais_101271055;
-		};
-		7B7FDE332D95DCC900AD7823 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B7FDE0B2D95DC9F00AD7823 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B7FDE122D95DCA000AD7823;
-			remoteInfo = A2_iOS_GabrielPais_101271055;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		7B7FDE132D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_GabrielPais_101271055.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7FDE162D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2_iOS_GabrielPais_101271055App.swift; sourceTree = "<group>"; };
-		7B7FDE182D95DCA000AD7823 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7B7FDE1A2D95DCC800AD7823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B7FDE1D2D95DCC800AD7823 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7B7FDE1F2D95DCC800AD7823 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7B7FDE222D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A2_iOS_GabrielPais_101271055.xcdatamodel; sourceTree = "<group>"; };
-		7B7FDE282D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A2_iOS_GabrielPais_101271055Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7FDE2C2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2_iOS_GabrielPais_101271055Tests.swift; sourceTree = "<group>"; };
-		7B7FDE322D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A2_iOS_GabrielPais_101271055UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7FDE362D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2_iOS_GabrielPais_101271055UITests.swift; sourceTree = "<group>"; };
-		7B7FDE382D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2_iOS_GabrielPais_101271055UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B9A06A92D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_GabrielPais_101271055.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9A06AC2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2_iOS_GabrielPais_101271055App.swift; sourceTree = "<group>"; };
+		7B9A06AE2D96F6C30053AC68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B9A06B02D96F6CB0053AC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B9A06B32D96F6CB0053AC68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B9A06B52D96F6CB0053AC68 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7B9A06B82D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A2_iOS_GabrielPais_101271055.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B7FDE102D95DCA000AD7823 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B7FDE252D95DCC900AD7823 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B7FDE2F2D95DCC900AD7823 /* Frameworks */ = {
+		7B9A06A62D96F6C30053AC68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,74 +36,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B7FDE0A2D95DC9F00AD7823 = {
+		7B9A06A02D96F6C30053AC68 = {
 			isa = PBXGroup;
 			children = (
-				7B7FDE152D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055 */,
-				7B7FDE2B2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests */,
-				7B7FDE352D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests */,
-				7B7FDE142D95DCA000AD7823 /* Products */,
+				7B9A06AB2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055 */,
+				7B9A06AA2D96F6C30053AC68 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7B7FDE142D95DCA000AD7823 /* Products */ = {
+		7B9A06AA2D96F6C30053AC68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B7FDE132D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055.app */,
-				7B7FDE282D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.xctest */,
-				7B7FDE322D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.xctest */,
+				7B9A06A92D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B7FDE152D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055 */ = {
+		7B9A06AB2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055 */ = {
 			isa = PBXGroup;
 			children = (
-				7B7FDE162D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055App.swift */,
-				7B7FDE182D95DCA000AD7823 /* ContentView.swift */,
-				7B7FDE1A2D95DCC800AD7823 /* Assets.xcassets */,
-				7B7FDE1F2D95DCC800AD7823 /* Persistence.swift */,
-				7B7FDE212D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */,
-				7B7FDE1C2D95DCC800AD7823 /* Preview Content */,
+				7B9A06AC2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055App.swift */,
+				7B9A06AE2D96F6C30053AC68 /* ContentView.swift */,
+				7B9A06B02D96F6CB0053AC68 /* Assets.xcassets */,
+				7B9A06B52D96F6CB0053AC68 /* Persistence.swift */,
+				7B9A06B72D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */,
+				7B9A06B22D96F6CB0053AC68 /* Preview Content */,
 			);
 			path = A2_iOS_GabrielPais_101271055;
 			sourceTree = "<group>";
 		};
-		7B7FDE1C2D95DCC800AD7823 /* Preview Content */ = {
+		7B9A06B22D96F6CB0053AC68 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7B7FDE1D2D95DCC800AD7823 /* Preview Assets.xcassets */,
+				7B9A06B32D96F6CB0053AC68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7B7FDE2B2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests */ = {
-			isa = PBXGroup;
-			children = (
-				7B7FDE2C2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.swift */,
-			);
-			path = A2_iOS_GabrielPais_101271055Tests;
-			sourceTree = "<group>";
-		};
-		7B7FDE352D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests */ = {
-			isa = PBXGroup;
-			children = (
-				7B7FDE362D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.swift */,
-				7B7FDE382D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITestsLaunchTests.swift */,
-			);
-			path = A2_iOS_GabrielPais_101271055UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B7FDE122D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055 */ = {
+		7B9A06A82D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B7FDE3C2D95DCC900AD7823 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055" */;
+			buildConfigurationList = 7B9A06BC2D96F6CB0053AC68 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055" */;
 			buildPhases = (
-				7B7FDE0F2D95DCA000AD7823 /* Sources */,
-				7B7FDE102D95DCA000AD7823 /* Frameworks */,
-				7B7FDE112D95DCA000AD7823 /* Resources */,
+				7B9A06A52D96F6C30053AC68 /* Sources */,
+				7B9A06A62D96F6C30053AC68 /* Frameworks */,
+				7B9A06A72D96F6C30053AC68 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -150,69 +90,25 @@
 			);
 			name = A2_iOS_GabrielPais_101271055;
 			productName = A2_iOS_GabrielPais_101271055;
-			productReference = 7B7FDE132D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055.app */;
+			productReference = 7B9A06A92D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7B7FDE272D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B7FDE3F2D95DCC900AD7823 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055Tests" */;
-			buildPhases = (
-				7B7FDE242D95DCC900AD7823 /* Sources */,
-				7B7FDE252D95DCC900AD7823 /* Frameworks */,
-				7B7FDE262D95DCC900AD7823 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B7FDE2A2D95DCC900AD7823 /* PBXTargetDependency */,
-			);
-			name = A2_iOS_GabrielPais_101271055Tests;
-			productName = A2_iOS_GabrielPais_101271055Tests;
-			productReference = 7B7FDE282D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7B7FDE312D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B7FDE422D95DCC900AD7823 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055UITests" */;
-			buildPhases = (
-				7B7FDE2E2D95DCC900AD7823 /* Sources */,
-				7B7FDE2F2D95DCC900AD7823 /* Frameworks */,
-				7B7FDE302D95DCC900AD7823 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B7FDE342D95DCC900AD7823 /* PBXTargetDependency */,
-			);
-			name = A2_iOS_GabrielPais_101271055UITests;
-			productName = A2_iOS_GabrielPais_101271055UITests;
-			productReference = 7B7FDE322D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7B7FDE0B2D95DC9F00AD7823 /* Project object */ = {
+		7B9A06A12D96F6C30053AC68 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					7B7FDE122D95DCA000AD7823 = {
+					7B9A06A82D96F6C30053AC68 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					7B7FDE272D95DCC900AD7823 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 7B7FDE122D95DCA000AD7823;
-					};
-					7B7FDE312D95DCC900AD7823 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 7B7FDE122D95DCA000AD7823;
 					};
 				};
 			};
-			buildConfigurationList = 7B7FDE0E2D95DCA000AD7823 /* Build configuration list for PBXProject "A2_iOS_GabrielPais_101271055" */;
+			buildConfigurationList = 7B9A06A42D96F6C30053AC68 /* Build configuration list for PBXProject "A2_iOS_GabrielPais_101271055" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,90 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 7B7FDE0A2D95DC9F00AD7823;
-			productRefGroup = 7B7FDE142D95DCA000AD7823 /* Products */;
+			mainGroup = 7B9A06A02D96F6C30053AC68;
+			productRefGroup = 7B9A06AA2D96F6C30053AC68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B7FDE122D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055 */,
-				7B7FDE272D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests */,
-				7B7FDE312D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests */,
+				7B9A06A82D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B7FDE112D95DCA000AD7823 /* Resources */ = {
+		7B9A06A72D96F6C30053AC68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7FDE1E2D95DCC800AD7823 /* Preview Assets.xcassets in Resources */,
-				7B7FDE1B2D95DCC800AD7823 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B7FDE262D95DCC900AD7823 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B7FDE302D95DCC900AD7823 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7B9A06B42D96F6CB0053AC68 /* Preview Assets.xcassets in Resources */,
+				7B9A06B12D96F6CB0053AC68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B7FDE0F2D95DCA000AD7823 /* Sources */ = {
+		7B9A06A52D96F6C30053AC68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7FDE202D95DCC800AD7823 /* Persistence.swift in Sources */,
-				7B7FDE232D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodeld in Sources */,
-				7B7FDE192D95DCA000AD7823 /* ContentView.swift in Sources */,
-				7B7FDE172D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055App.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B7FDE242D95DCC900AD7823 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B7FDE2D2D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B7FDE2E2D95DCC900AD7823 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B7FDE392D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITestsLaunchTests.swift in Sources */,
-				7B7FDE372D95DCC900AD7823 /* A2_iOS_GabrielPais_101271055UITests.swift in Sources */,
+				7B9A06B62D96F6CB0053AC68 /* Persistence.swift in Sources */,
+				7B9A06B92D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld in Sources */,
+				7B9A06AF2D96F6C30053AC68 /* ContentView.swift in Sources */,
+				7B9A06AD2D96F6C30053AC68 /* A2_iOS_GabrielPais_101271055App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7B7FDE2A2D95DCC900AD7823 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B7FDE122D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055 */;
-			targetProxy = 7B7FDE292D95DCC900AD7823 /* PBXContainerItemProxy */;
-		};
-		7B7FDE342D95DCC900AD7823 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B7FDE122D95DCA000AD7823 /* A2_iOS_GabrielPais_101271055 */;
-			targetProxy = 7B7FDE332D95DCC900AD7823 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		7B7FDE3A2D95DCC900AD7823 /* Debug */ = {
+		7B9A06BA2D96F6CB0053AC68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		7B7FDE3B2D95DCC900AD7823 /* Release */ = {
+		7B9A06BB2D96F6CB0053AC68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,7 +267,7 @@
 			};
 			name = Release;
 		};
-		7B7FDE3D2D95DCC900AD7823 /* Debug */ = {
+		7B9A06BD2D96F6CB0053AC68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -446,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		7B7FDE3E2D95DCC900AD7823 /* Release */ = {
+		7B9A06BE2D96F6CB0053AC68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -472,120 +322,26 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7B7FDE402D95DCC900AD7823 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJSYMMTG4F;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "lab1.A2-iOS-GabrielPais-101271055Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A2_iOS_GabrielPais_101271055.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/A2_iOS_GabrielPais_101271055";
-			};
-			name = Debug;
-		};
-		7B7FDE412D95DCC900AD7823 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJSYMMTG4F;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "lab1.A2-iOS-GabrielPais-101271055Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A2_iOS_GabrielPais_101271055.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/A2_iOS_GabrielPais_101271055";
-			};
-			name = Release;
-		};
-		7B7FDE432D95DCC900AD7823 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJSYMMTG4F;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "lab1.A2-iOS-GabrielPais-101271055UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = A2_iOS_GabrielPais_101271055;
-			};
-			name = Debug;
-		};
-		7B7FDE442D95DCC900AD7823 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJSYMMTG4F;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "lab1.A2-iOS-GabrielPais-101271055UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = A2_iOS_GabrielPais_101271055;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B7FDE0E2D95DCA000AD7823 /* Build configuration list for PBXProject "A2_iOS_GabrielPais_101271055" */ = {
+		7B9A06A42D96F6C30053AC68 /* Build configuration list for PBXProject "A2_iOS_GabrielPais_101271055" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B7FDE3A2D95DCC900AD7823 /* Debug */,
-				7B7FDE3B2D95DCC900AD7823 /* Release */,
+				7B9A06BA2D96F6CB0053AC68 /* Debug */,
+				7B9A06BB2D96F6CB0053AC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B7FDE3C2D95DCC900AD7823 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055" */ = {
+		7B9A06BC2D96F6CB0053AC68 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B7FDE3D2D95DCC900AD7823 /* Debug */,
-				7B7FDE3E2D95DCC900AD7823 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B7FDE3F2D95DCC900AD7823 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B7FDE402D95DCC900AD7823 /* Debug */,
-				7B7FDE412D95DCC900AD7823 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B7FDE422D95DCC900AD7823 /* Build configuration list for PBXNativeTarget "A2_iOS_GabrielPais_101271055UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B7FDE432D95DCC900AD7823 /* Debug */,
-				7B7FDE442D95DCC900AD7823 /* Release */,
+				7B9A06BD2D96F6CB0053AC68 /* Debug */,
+				7B9A06BE2D96F6CB0053AC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -593,17 +349,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7B7FDE212D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */ = {
+		7B9A06B72D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7B7FDE222D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodel */,
+				7B9A06B82D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodel */,
 			);
-			currentVersion = 7B7FDE222D95DCC800AD7823 /* A2_iOS_GabrielPais_101271055.xcdatamodel */;
+			currentVersion = 7B9A06B82D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodel */;
 			path = A2_iOS_GabrielPais_101271055.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 7B7FDE0B2D95DC9F00AD7823 /* Project object */;
+	rootObject = 7B9A06A12D96F6C30053AC68 /* Project object */;
 }
