@@ -23,7 +23,6 @@ struct ProductListView: View {
         }
     }
     
-    // In ProductListView.swift, update the body property:
     var body: some View {
         List {
             ForEach(filteredProducts, id: \.self) { product in
@@ -39,6 +38,11 @@ struct ProductListView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .navigationBarTitleDisplayMode(.inline)
+        // Add this to ensure content doesn't go under the tab bar
+        .edgesIgnoringSafeArea([.horizontal, .top])
+        .safeAreaInset(edge: .bottom) {
+            // Add empty space at the bottom to prevent overlap with tab bar
+            Color.clear.frame(height: 1)
         }
     }
-
+}
