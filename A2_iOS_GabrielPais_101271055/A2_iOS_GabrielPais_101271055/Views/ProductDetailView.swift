@@ -28,5 +28,6 @@ struct ProductDetailView: View {
             }
             .padding()
         }
+        .edgesIgnoringSafeArea([.horizontal])
     }
 }
