@@ -1,4 +1,5 @@
 import SwiftUI
+import CoreData
 
 struct ProductDetailView: View {
     var product: Product
@@ -13,12 +14,17 @@ struct ProductDetailView: View {
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 Text("Provider: \(product.provider ?? "")")
+                    .padding(.vertical, 1)
                 Text("Price: $\(product.price, specifier: "%.2f")")
+                    .padding(.vertical, 1)
+                
                 Text(product.productDescription ?? "")
                     .padding(.vertical, 2)
                 
-                // Product images loaded from file system
-                ProductImagesView(productID: product.productID)
+                if product.hasImage {
+                    ProductImagesView(productID: product.productID)
+                        .padding(.top, 8)
+                }
             }
             .padding()
         }

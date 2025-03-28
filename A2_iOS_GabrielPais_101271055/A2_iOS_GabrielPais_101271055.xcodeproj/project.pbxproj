@@ -17,9 +17,8 @@
 		7B9A06B42D96F6CB0053AC68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9A06B32D96F6CB0053AC68 /* Preview Assets.xcassets */; };
 		7B9A06B62D96F6CB0053AC68 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06B52D96F6CB0053AC68 /* Persistence.swift */; };
 		7B9A06B92D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06B72D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld */; };
-		7B9A06C12D96F75F0053AC68 /* Product_CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06C02D96F75F0053AC68 /* Product_CoreDataClass.swift */; };
-		7B9A06C32D96F9B10053AC68 /* Product_CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06C22D96F9B00053AC68 /* Product_CoreDataProperties.swift */; };
 		7B9A06C62D96F9EE0053AC68 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A06C52D96F9EE0053AC68 /* ProductDetailView.swift */; };
+		7BFA8D062D9714E600F7F133 /* ProductModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA8D042D9714E600F7F133 /* ProductModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +33,8 @@
 		7B9A06B32D96F6CB0053AC68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B9A06B52D96F6CB0053AC68 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7B9A06B82D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A2_iOS_GabrielPais_101271055.xcdatamodel; sourceTree = "<group>"; };
-		7B9A06C02D96F75F0053AC68 /* Product_CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_CoreDataClass.swift; sourceTree = "<group>"; };
-		7B9A06C22D96F9B00053AC68 /* Product_CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_CoreDataProperties.swift; sourceTree = "<group>"; };
 		7B9A06C52D96F9EE0053AC68 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		7BFA8D052D9714E600F7F133 /* ProductModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +89,7 @@
 		7B9A06BF2D96F7220053AC68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7B9A06C02D96F75F0053AC68 /* Product_CoreDataClass.swift */,
-				7B9A06C22D96F9B00053AC68 /* Product_CoreDataProperties.swift */,
+				7BFA8D042D9714E600F7F133 /* ProductModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,11 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7AE8BE2D96FC6500536815 /* ProductListView.swift in Sources */,
-				7B9A06C12D96F75F0053AC68 /* Product_CoreDataClass.swift in Sources */,
 				7B9A06C62D96F9EE0053AC68 /* ProductDetailView.swift in Sources */,
+				7BFA8D062D9714E600F7F133 /* ProductModel.xcdatamodeld in Sources */,
 				7B7AE8C02D96FC7C00536815 /* AddProductView.swift in Sources */,
 				7B9A06B62D96F6CB0053AC68 /* Persistence.swift in Sources */,
-				7B9A06C32D96F9B10053AC68 /* Product_CoreDataProperties.swift in Sources */,
 				7B7AE8C42D96FC9D00536815 /* ProductImagesView.swift in Sources */,
 				7B9A06B92D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodeld in Sources */,
 				7B7AE8C22D96FC8B00536815 /* SearchBar.swift in Sources */,
@@ -400,6 +396,16 @@
 			);
 			currentVersion = 7B9A06B82D96F6CB0053AC68 /* A2_iOS_GabrielPais_101271055.xcdatamodel */;
 			path = A2_iOS_GabrielPais_101271055.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		7BFA8D042D9714E600F7F133 /* ProductModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BFA8D052D9714E600F7F133 /* ProductModel.xcdatamodel */,
+			);
+			currentVersion = 7BFA8D052D9714E600F7F133 /* ProductModel.xcdatamodel */;
+			path = ProductModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

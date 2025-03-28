@@ -6,7 +6,7 @@ struct ContentView: View {
 
     // Fetch all products sorted by name (you can change the sort criteria as needed)
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.productID, ascending: false)],
         animation: .default)
     private var products: FetchedResults<Product>
     
@@ -16,41 +16,59 @@ struct ContentView: View {
     var body: some View {
         TabView {
             // Detail View Tab
-            VStack {
-                if !products.isEmpty {
-                    ProductDetailView(product: products[currentIndex])
-                    HStack {
-                        Button(action: {
-                            if currentIndex > 0 {
-                                currentIndex -= 1
+            NavigationView {
+                VStack {
+                    if !products.isEmpty {
+                        // Ensure currentIndex is valid
+                        let safeIndex = min(currentIndex, products.count - 1)
+                        
+                        ProductDetailView(product: products[safeIndex])
+                        HStack {
+                            Button(action: {
+                                if currentIndex > 0 {
+                                    currentIndex -= 1
+                                }
+                            }) {
+                                Text("Previous")
+                                    .disabled(currentIndex <= 0)
                             }
-                        }) {
-                            Text("Previous")
-                        }
-                        Spacer()
-                        Button(action: {
-                            if currentIndex < products.count - 1 {
-                                currentIndex += 1
+                            Spacer()
+                            Button(action: {
+                                if currentIndex < products.count - 1 {
+                                    currentIndex += 1
+                                }
+                            }) {
+                                Text("Next")
+                                    .disabled(currentIndex >= products.count - 1)
                             }
-                        }) {
-                            Text("Next")
                         }
-                    }
-                    .padding()
-                } else {
-                    Text("No Products Available")
                         .padding()
+                    } else {
+                        Text("No Products Available")
+                            .padding()
+                    }
                 }
+                .navigationTitle("Product Details")
             }
             .tabItem {
                 Image(systemName: "doc.text")
                 Text("Detail")
             }
+            .onChange(of: products.count) { newCount in
+                // If products count changes, ensure currentIndex is valid
+                if newCount == 0 {
+                    currentIndex = 0
+                } else if currentIndex >= newCount {
+                    currentIndex = newCount - 1
+                }
+            }
             
             // List View Tab with Search
             NavigationView {
-                VStack {
+                VStack(spacing: 0) {
                     SearchBar(text: $searchText)
+                        .padding(.horizontal)
+                        .padding(.bottom, 5)
                     ProductListView(searchText: searchText)
                 }
                 .navigationTitle("Products")

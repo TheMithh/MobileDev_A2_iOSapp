@@ -4,7 +4,7 @@ import CoreData
 struct ProductListView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: false)],
         animation: .default)
     private var products: FetchedResults<Product>
     
@@ -23,6 +23,7 @@ struct ProductListView: View {
         }
     }
     
+    // In ProductListView.swift, update the body property:
     var body: some View {
         List {
             ForEach(filteredProducts, id: \.self) { product in
@@ -33,7 +34,11 @@ struct ProductListView: View {
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
+                .padding(.vertical, 4)
             }
         }
+        .listStyle(InsetGroupedListStyle())
+        .navigationBarTitleDisplayMode(.inline)
+        }
     }
-}
+

@@ -6,7 +6,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "ProductModel") // Name must match your .xcdatamodeld file
+        container = NSPersistentContainer(name: "A2_iOS_GabrielPais_101271055")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
