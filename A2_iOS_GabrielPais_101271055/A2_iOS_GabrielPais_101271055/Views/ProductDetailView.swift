@@ -20,11 +20,6 @@ struct ProductDetailView: View {
                 
                 Text(product.productDescription ?? "")
                     .padding(.vertical, 2)
-                
-                if product.hasImage {
-                    ProductImagesView(productID: product.productID)
-                        .padding(.top, 8)
-                }
             }
             .padding()
         }
