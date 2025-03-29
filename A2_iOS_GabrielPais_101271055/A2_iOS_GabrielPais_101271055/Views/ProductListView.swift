@@ -4,7 +4,7 @@ import CoreData
 struct ProductListView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: false)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)],
         animation: .default)
     private var products: FetchedResults<Product>
     
@@ -24,28 +24,75 @@ struct ProductListView: View {
     }
     
     var body: some View {
+        // Fixed the bug with the list overshadowing the tab bar menu
         List {
             ForEach(filteredProducts, id: \.self) { product in
                 NavigationLink(destination: ProductDetailView(product: product)) {
-                    VStack(alignment: .leading) {
-                        Text(product.name ?? "Unknown")
-                            .font(.headline)
-                        Text(product.productDescription ?? "")
-                            .font(.subheadline)
+                    HStack {
+                        // Product icon
+                        ZStack {
+                            Circle()
+                                .fill(colorForProduct(product))
+                                .frame(width: 40, height: 40)
+                            
+                            Text(String(product.name?.prefix(1) ?? "?"))
+                                .font(.system(size: 16, weight: .bold))
+                                .foregroundColor(.white)
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(product.name ?? "Unknown")
+                                .font(.headline)
+                                .foregroundColor(.primary)
+                            
+                            HStack {
+                                Text("$\(product.price, specifier: "%.2f")")
+                                    .font(.subheadline)
+                                    .foregroundColor(.blue)
+                                    .fontWeight(.semibold)
+                                
+                                Text("•")
+                                    .foregroundColor(.gray)
+                                
+                                Text(product.provider ?? "")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                                    .lineLimit(1)
+                            }
+                        }
+                        .padding(.leading, 8)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.right")
                             .foregroundColor(.gray)
-                            .lineLimit(1)
+                            .font(.system(size: 14))
                     }
-                    .padding(.vertical, 4)
+                    .padding(.vertical, 8)
                 }
             }
         }
+        // Fix for the menu list overshadowing issue
         .listStyle(InsetGroupedListStyle())
-        .navigationBarTitleDisplayMode(.inline)
-        // Add this to ensure content doesn't go under the tab bar
-        .edgesIgnoringSafeArea([.horizontal, .top])
+        .padding(.bottom, 0)
+        // Use safeAreaInset instead of ignoring safe area edges to prevent overshadowing
         .safeAreaInset(edge: .bottom) {
-            // Add empty space at the bottom to prevent overlap with tab bar
-            Color.clear.frame(height: 1)
+            // Add enough space for the tab bar
+            Color.clear.frame(height: 49)
         }
+    }
+    
+    // Generate consistent color based on product name
+    private func colorForProduct(_ product: Product) -> Color {
+        let colors: [Color] = [
+            .blue, .green, .orange, .purple, .pink,
+            .red, .teal, .indigo, .mint, .cyan
+        ]
+        
+        // Use the product name or ID to create a consistent color
+        let nameHash = (product.name ?? "Unknown").hash
+        let index = abs(nameHash) % colors.count
+        
+        return colors[index]
     }
 }
