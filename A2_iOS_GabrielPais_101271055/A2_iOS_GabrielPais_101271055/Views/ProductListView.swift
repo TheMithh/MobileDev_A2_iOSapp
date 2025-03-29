@@ -24,7 +24,6 @@ struct ProductListView: View {
     }
     
     var body: some View {
-        // Fixed the bug with the list overshadowing the tab bar menu
         List {
             ForEach(filteredProducts, id: \.self) { product in
                 NavigationLink(destination: ProductDetailView(product: product)) {
@@ -72,12 +71,9 @@ struct ProductListView: View {
                 }
             }
         }
-        // Fix for the menu list overshadowing issue
         .listStyle(InsetGroupedListStyle())
         .padding(.bottom, 0)
-        // Use safeAreaInset instead of ignoring safe area edges to prevent overshadowing
         .safeAreaInset(edge: .bottom) {
-            // Add enough space for the tab bar
             Color.clear.frame(height: 49)
         }
     }
@@ -89,7 +85,6 @@ struct ProductListView: View {
             .red, .teal, .indigo, .mint, .cyan
         ]
         
-        // Use the product name or ID to create a consistent color
         let nameHash = (product.name ?? "Unknown").hash
         let index = abs(nameHash) % colors.count
         

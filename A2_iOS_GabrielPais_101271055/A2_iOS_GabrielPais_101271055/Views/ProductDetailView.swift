@@ -7,13 +7,12 @@ struct ProductDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                // Product Name with Styling
                 Text(product.name ?? "Unknown Product")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(.primary)
                     .padding(.bottom, 4)
                 
-                // Product ID with subtle styling
+                // Product ID
                 HStack {
                     Text("Product ID:")
                         .font(.subheadline)

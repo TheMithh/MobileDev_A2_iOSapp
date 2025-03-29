@@ -222,7 +222,7 @@ struct ContentView: View {
     }
     
     private func addSampleProducts() {
-        // Sample product data with more realistic values
+        // Sample product data with real values
         let sampleData: [(name: String, desc: String, price: Double, provider: String)] = [
             ("MacBook Pro 16\"", "Powerful laptop with M2 Max chip, 32GB RAM, and 1TB SSD.", 2499.99, "Apple Inc."),
             ("Wireless Earbuds", "Noise-cancelling earbuds with 24-hour battery life.", 129.99, "Sony Electronics"),
