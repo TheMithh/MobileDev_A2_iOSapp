@@ -5,19 +5,30 @@ import UIKit
 class DefaultImageHelper {
     static let shared = DefaultImageHelper()
     
-    private let defaultImageCount = 5
+    // We have 10 default images named product_default_1 through product_default_10
+    // And one special default image named product_default_0
+    private let defaultImageCount = 10
+    private let defaultFallbackImage = "product_default_0" // The 11th image used as ultimate fallback
     
     /// Gets a default image either from the bundle or a random one
     func getDefaultImage(index: Int? = nil) -> UIImage? {
         // If index is specified, try to get that specific default image
         if let index = index {
-            let imageName = "product_default_\(index % defaultImageCount + 1)"
-            return UIImage(named: imageName)
+            let imageIndex = (index % defaultImageCount) + 1 // 1-based indexing to match asset names
+            let imageName = "product_default_\(imageIndex)"
+            if let image = UIImage(named: imageName) {
+                return image
+            }
         }
         
-        // Otherwise, get a random default image
+        // If index-based lookup failed or no index specified, get a random default image
         let randomIndex = Int.random(in: 1...defaultImageCount)
-        return UIImage(named: "product_default_\(randomIndex)")
+        if let image = UIImage(named: "product_default_\(randomIndex)") {
+            return image
+        }
+        
+        // If all else fails, use the special default fallback image
+        return UIImage(named: defaultFallbackImage)
     }
     
     /// Save a default image for a product
